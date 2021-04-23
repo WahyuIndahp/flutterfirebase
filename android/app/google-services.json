@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "398775124141",
+    "project_id": "flutterfirebase-144b5",
+    "storage_bucket": "flutterfirebase-144b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398775124141:android:34b1beb901c86eb030c624",
+        "android_client_info": {
+          "package_name": "com.example.praktikum_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398775124141-sa3m4agc6gfbu8ouvsnpb1m8tdmq3s7u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWkWwFY218aixoKIZyE__VbPBQtGlt_YY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398775124141-sa3m4agc6gfbu8ouvsnpb1m8tdmq3s7u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
