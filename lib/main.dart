@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:praktikum_firebase/login_page.dart';
+import 'login_page.dart';
 
 void main() {
   runApp(MyApp());
