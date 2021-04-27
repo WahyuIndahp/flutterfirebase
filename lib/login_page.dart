@@ -24,13 +24,12 @@ class _LoginPageState extends State<LoginPage> {
   return Scaffold(
     resizeToAvoidBottomInset: false,
     body: Container(
-      color: Colors.white,
         child: Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
-              FlutterLogo(size: 100),
+              FlutterLogo(size: 150),
               SizedBox(height: 5), 
               _signInButton(),
               Container (
@@ -44,6 +43,8 @@ class _LoginPageState extends State<LoginPage> {
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.blue),
                       borderRadius: BorderRadius.circular(30)),
+                    hintText: 'Email',
+                    hintStyle: TextStyle(fontSize: 20, color: Colors.blue, fontWeight: FontWeight.bold)
                   ),
                   onChanged: (value) {  
                   },
@@ -60,7 +61,7 @@ class _LoginPageState extends State<LoginPage> {
                   style: TextStyle(color: Colors.grey[700], fontSize: 20, fontWeight: FontWeight.bold),
                   decoration: InputDecoration(
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.white),
+                      borderSide: BorderSide(color: Colors.blue),
                       borderRadius: BorderRadius.circular(30)),
                     contentPadding: EdgeInsets.all(15),
                     suffixIcon: GestureDetector(
@@ -92,6 +93,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               Container(
                 padding: EdgeInsets.only(top:5.0, bottom:5.0),
+                margin: EdgeInsets.only(left: 20, right: 20),
                 child: Row(
                   children: <Widget> [
                     Expanded(
@@ -108,7 +110,7 @@ class _LoginPageState extends State<LoginPage> {
                               Navigator.of(context).push(
                                 MaterialPageRoute(
                                   builder: (context) {
-                                    return FirstScreen2();
+                                    return EmailScreen();
                                   },
                                 ),
                               );
@@ -118,7 +120,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                     SizedBox(
-                      width : 5,
+                      width : 15,
                     ),
                     Expanded(
                       child: RaisedButton(
@@ -134,7 +136,7 @@ class _LoginPageState extends State<LoginPage> {
                               Navigator.of(context).push(
                                 MaterialPageRoute(
                                   builder: (context) {
-                                    return FirstScreen2();
+                                    return EmailScreen();
                                   },
                                 ),
                               );
