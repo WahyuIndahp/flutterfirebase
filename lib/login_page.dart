@@ -23,13 +23,19 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
   return Scaffold(
     resizeToAvoidBottomInset: false,
-    body: Container(
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(image: AssetImage('assets/background.jpg'),
+          fit: BoxFit.cover,
+          colorFilter: ColorFilter.mode(Colors.blue, BlendMode.darken),
+          ),
+        ),
         child: Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
-              FlutterLogo(size: 150),
+              Image(image: AssetImage("assets/logo.png"), height: 250.0),
               SizedBox(height: 5), 
               _signInButton(),
               Container (
@@ -37,9 +43,13 @@ class _LoginPageState extends State<LoginPage> {
                 margin: EdgeInsets.only(left: 10, right: 10, top: 10),
                 height: 60,
                 child: TextField(
+                  style:TextStyle(fontSize: 20.0, color:Colors.grey[700], fontWeight: FontWeight.bold),
                   controller: emailController,
                   keyboardType: TextInputType.text,
                   decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.white,
+                    focusColor: Colors.blue,
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.blue),
                       borderRadius: BorderRadius.circular(30)),
@@ -173,7 +183,7 @@ class _LoginPageState extends State<LoginPage> {
       },
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
       highlightElevation: 0,
-      borderSide: BorderSide(color: Colors.grey),
+      borderSide: BorderSide(color: Colors.blue),
       child: Padding(
         padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
         child: Row(
@@ -187,7 +197,8 @@ class _LoginPageState extends State<LoginPage> {
                 'SignIn With Google',
                 style: TextStyle(
                   fontSize: 15,
-                  color: Colors.grey,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             )

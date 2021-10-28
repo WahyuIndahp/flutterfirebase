@@ -52,6 +52,14 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
   - assets/google_logo.png
+  - assets/logo.png
+  - assets/background.jpg
+  - assets/alat.jpg
+  - assets/cart.jpg
+  - assets/store.jpg
+  - assets/daftar_barang.png
+  - assets/store.png
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
